@@ -420,6 +420,7 @@
 		padding: 3vh 1vh 3vh;
 		font-size:  2.4vh;
 		color: white;
+		border-bottom: 2px solid white;
 	}
 	.servicetBtn:hover{
 		color: #005d41;
