@@ -1,0 +1,213 @@
+@media (min-aspect-ratio: 10/10){
+	.greatContainer{
+		width:100%;
+		white-space: nowrap;
+		overflow: hidden;
+		scroll-behavior: smooth;
+		color: white;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		opacity: 0;
+		animation: 1s linear appearSlowly forwards;
+	}
+	.greatContainer h1{
+		display: block;
+		width: 100%;
+		position: absolute;
+		top:15vh;
+	}
+	.videoContainer{
+		width:45vw;
+		height:25vw;
+		background-color: white;
+		margin: calc((85vh - 25vw) / 2);
+		border-radius: 1vw;
+		border:2px solid white;
+	}
+	.sideBtnsPannel{
+		width: 20vw;
+		height: 89vh;
+		position: absolute;
+		left:0;
+		top:6vh;
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: space-around;
+		box-sizing: border-box;
+		padding-top:10vh;
+		padding-bottom: 10vh;
+		border-right: 2px solid white;
+		background-color: #14232C;
+		animation: 2s linear slideRight forwards;
+	}
+	.sideDescPannel{
+		width: 20vw;
+		height: 89vh;
+		position: absolute;
+		right:0;
+		top:6vh;
+		color: white;
+		border-left: 2px solid white;
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: space-around;
+		box-sizing: border-box;
+		padding-top:10vh;
+		padding-bottom: 10vh;
+		font-size: 3vh;
+		background-color: #14232C;
+		animation: 2s linear slideLeft forwards;
+	}
+	.videoBtn{
+		width: 8vw;
+		height: 8vw;
+		border-radius: 50%;
+		background-color: #7ac4a5;
+		margin: 1vw 6vw 1vw;
+		box-shadow: inset 0 0 .5vw 0 black;
+		transition: background-color 01s, filter 0.25s, box-shadow 0.25s, width 0.25s, height 0.25s, margin 0.25s;
+		z-index: 2;
+	}
+	.videoBtn:hover{
+		background-color: white;
+		box-shadow: inset 0 0 2vw 0 black;
+		width: 10vw;
+		height: 10vw;
+		margin: 0 5vw 0;
+	}
+	.videoBtn:active{
+		filter: brightness(1.2);
+		box-shadow: inset 0 0 1vw 0 black;
+	}
+	.videoBtn img{
+		width:100%;
+		padding-top: 1.5vw;
+	}
+}
+@media (max-aspect-ratio: 10/10){
+	.greatContainer{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		box-sizing: border-box;
+		color: white;
+		opacity: 0;
+		animation: 1s linear appearSlowly forwards;
+	}
+	.greatContainer h1{
+		display: block;
+		width: 100%;
+	}
+	.videoContainer{
+		width:90vw;
+		height:50vw;
+		background-color: white;
+		margin: 5vw 5vw 5vw;
+		border-radius: 3vw;
+		border:2px solid white;
+	}
+	.sideBtnsPannel{
+		width: 100vw;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		box-sizing: border-box;
+		padding: 2vh 1vh 1vh;
+	}
+	.sideDescPannel{
+		width: 100vw;
+		height:40vh;
+		color: white;
+		position: absolute;
+		bottom:5vh;
+		border-top: 2px solid white;
+		display: block;
+		flex-direction: column;
+		justify-content: space-around;
+		box-sizing: border-box;
+		padding-top:5vh;
+		padding-bottom: 5vh;
+		font-size: 2.5vh;
+		background-color: #14232C;
+		animation: 2s linear descSmallScr forwards;
+		z-index: 1;
+	}
+	.videoBtn{
+		width: 20vw;
+		border-radius: 3vw;
+		background-color: white;
+		box-shadow: inset 0 0 .5vw 0 black;
+		transition: background-color 0.25s, filter 0.25s, box-shadow 0.25s, width 0.25s, height 0.25s, margin 0.25s;
+		animation: 2s linear videoBtnBigScr forwards;
+		z-index: 2;
+	}
+	.videoBtn:active{
+		background-color: #7ac4a5;
+		filter: brightness(1.2);
+		box-shadow: inset 0 0 1vw 0 black;
+	}
+	.videoBtn img{
+		width:100%;
+		padding-top: 1.5vw;
+	}
+}
+@keyframes appearSlowly {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  0% {
+    left:-20vw;
+  }
+  75% {
+    left:-20vw;
+  }
+  100% {
+    left:0;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    right:-20vw;
+  }
+  75% {
+    right:-20vw;
+  }
+  100% {
+    right:0;
+  }
+}
+@keyframes videoBtnBigScr {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes descSmallScr {
+  0% {
+    bottom: -40vh;
+  }
+  85% {
+    bottom: -40vh;
+  }
+  100% {
+    bottom: 5vh;
+  }
+}

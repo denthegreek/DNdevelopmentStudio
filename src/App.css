@@ -1,38 +1,206 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+button{
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+html{
+  overflow: hidden;
+  max-height: 100vh;
+}
 .App {
+  text-align: center;
+  background-color: #0d161c;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-nav{
+  height: 5vh;
+  width: 100vw;
+  background-color: white;
+  color:#0d161c;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5vh 0 0.5vh;
+  z-index: 3;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainPartition{
+  height: 89vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  opacity: 0;
+  animation: 3s linear appearSlowly forwards;
+  z-index: 1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer{
+  height: 5vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: white;
+  color: #0d161c;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes  btnEffect {
   from {
-    transform: rotate(0deg);
+    background-color: white;
   }
   to {
+    background-color: #B8FFF2;
+  }
+}
+.navItem{
+  width: 4vh;
+  height: 4vh;
+  color: white;
+  background-color:#0d161c;
+  box-sizing: border-box;
+  margin: .5vh 1vh .5vh;
+  border-radius: 50%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.5vh 0.5vh 0.5vh;
+  box-shadow: 0 0 0 0 #0d161c;
+  transition: background-color 0.25s, color  0.25s, box-shadow 0.25s;
+}
+.navItem:hover{
+  color: #0d161c;
+  background-color: white;
+  box-shadow: 0 0 0 0.4vh #0d161c;
+}
+.navItem:active{
+  color: #0d161c;
+  background-color: white;
+  box-shadow: 0 0 0 .6vh #0d161c;
+}
+.activeNavItem{
+  width: 4vh;
+  height: 4vh;
+  color: white;
+  background-color: #005d41;
+  box-shadow: 0 0 0 0.4vh #005d41;
+  box-sizing: border-box;
+  margin: .5vh 1vh .5vh;
+  border-radius: 50%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0.5vh 0.5vh 0.5vh;
+  transition: background-color 0.25s, color  0.25s, box-shadow 0.25s;
+  animation: 5s linear beat forwards;
+} 
+.cornerLogo{
+  height: 5vh;
+  box-sizing: border-box;
+  margin: 0.5vh 1vh 0.5vh;
+  display: inline-block;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  left:2vh;
+}
+@media (min-aspect-ratio: 10/10){
+  .reactLogo{
+    height: 5vh;
+    box-sizing: border-box;
+    margin: 0.5vh 1vh 0.5vh;
+    display: inline-block;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    right:2vh;
+    animation: 10s linear App-logo-spin infinite;
+  }
+  .reactText{
+    height: 5vh;
+    box-sizing: border-box;
+    margin: 0.5vh 1vh 0.5vh;
+    display: inline-block;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    right:8vh;
+  }
+}
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
     transform: rotate(360deg);
   }
 }
+@keyframes beat {
+  0% {
+    width:4vh;
+    height: 4vh;
+    margin: 0.5vh 1vh 0.5vh;
+    background-color: #005d41;
+    box-shadow: 0 0 0 0.4vh #005d41;
+  }
+  2% {
+    width: 3vh;
+    height: 3vh;
+    margin: 1.25vh 1.5vh 1.25vh;
+    background-color:#0d161c;
+    box-shadow: 0 0 0 0.4vh #0d161c;
+  }
+  6% {
+    width: 4vh;
+    height: 4vh;
+    margin: 0.5vh 1vh 0.5vh;
+    background-color: #005d41;
+    box-shadow: 0 0 0 0.4vh #005d41;
+  }
+}
+.appearSlowly{
+  animation: 5s linear appearSlowly forwards;
+}
+@keyframes appearSlowly {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

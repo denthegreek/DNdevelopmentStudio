@@ -1,0 +1,167 @@
+@media (min-aspect-ratio: 10/10){
+	.bigContainer{
+		width:100%;
+		white-space: nowrap;
+		overflow: hidden;
+		scroll-behavior: smooth;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		opacity: 0;
+		animation: 1s linear appearSlowly forwards;
+	}
+	.bigContainer h1{
+		display: block;
+		width: 100%;
+		padding-top: 5vh;
+		color: #47677a;
+		font-size: 5vh;
+	}
+	.linkContainer{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+		box-sizing: border-box;
+		padding-top: calc((89vh - 20vh - 35vw) / 2);
+	}
+	.gitLink{
+		display: inline-block;
+		height:30vw;
+		width:25vw;
+		position: relative;
+		border-radius: 2vw;
+		margin: calc(2.5vw + 2vh) 1.25vw 2.5vw;
+		transition: width 0.25s, height 0.25s, margin 0.25s, max-width 0.25s, max-height 0.25s, filter 1s;
+		border:3px solid #14232C;
+		box-sizing: border-box;
+		background-color: #14232C;
+		max-height: 60vh;
+		max-width: 50vh;
+		filter: brightness(0.8);
+		cursor: pointer;
+	}
+	.gitLink:hover{
+		height:35vw;
+		width:27.5vw;
+		margin: 2vh 0 0;
+		max-height: calc(60vh + 5vw);
+		max-width: calc(50vh + 2.5vw);
+		filter: brightness(1);
+	}
+	.linkTopSegment{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 20%;
+		border-top-left-radius: 2vw;
+		border-top-right-radius: 2vw;
+		border-bottom:3px solid #14232C;
+		box-sizing: border-box;
+		background: rgb(20,35,44);
+		background: linear-gradient(45deg, rgba(20,35,44,1) 0%, rgba(70,99,115,1) 100%);
+	}
+	.linkBottomSegment{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 80%;
+		border-bottom-left-radius: 2vw;
+		border-bottom-right-radius: 2vw;
+	}
+	.bottomImg{
+		width:100%;
+		height: 100%;
+		border-bottom-left-radius: 2vw;
+		border-bottom-right-radius: 2vw;
+	}
+}
+@media (max-aspect-ratio: 10/10){
+	.bigContainer{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		box-sizing: border-box;
+		color: #47677a;
+		opacity: 0;
+		animation: 1s linear appearSlowly forwards;
+	}
+	.bigContainer h1{
+		display: block;
+		width: 100%;
+		padding-top: 2vh;
+	}
+	.linkContainer{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+		box-sizing: border-box;
+		padding-left: 5vw;
+	}
+	.gitLink{
+		display: inline-block;
+		height:20vh;
+		width:90%;
+		position: relative;
+		border-radius: 2vh;
+		margin: calc(2.5vw + 2vh) 1.25vw 2.5vw;
+		border:3px solid #87a8b0;
+		box-sizing: border-box;
+		background-color: #14232C;
+		max-height: 60vh;
+		max-width: 50vh;
+		cursor: pointer;
+		background: rgb(20,35,44);
+		background: linear-gradient(45deg, rgba(20,35,44,1) 0%, rgba(70,99,115,1) 100%);
+	}
+	.linkTopSegment{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 70%;
+		width: 60%;
+		margin-top: 10%;
+		border-top-left-radius: 2vh;
+		border-bottom-left-radius: 2vh;
+		border-bottom:3px solid #14232C;
+		box-sizing: border-box;
+		border: none;
+	}
+	.linkBottomSegment{
+		display: inline-block;
+		height: 100%;
+		border-left:3px solid #87a8b0;
+		position: absolute;
+		top:0;
+		right: 0;
+		border-bottom-right-radius: 2vh;
+		border-top-right-radius: 2vh;
+	}
+	.bottomImg{
+		width:100%;
+		height: 100%;
+		border-bottom-right-radius: 2vh;
+		border-top-right-radius: 2vh;
+	}
+}
+
+.appearSlowly{
+  animation: 3s linear appearSlowly forwards;
+}
+@keyframes appearSlowly {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
