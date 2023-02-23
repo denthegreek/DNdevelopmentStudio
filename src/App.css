@@ -124,6 +124,14 @@ html{
   top: 0;
   left:2vh;
 }
+@media (max-aspect-ratio: 10/10){
+  .reactLogo{
+    display: none;
+  }
+  .reactText{
+    display: none;
+  }
+}
 @media (min-aspect-ratio: 10/10){
   .reactLogo{
     height: 5vh;
