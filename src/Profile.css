@@ -168,18 +168,9 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 		border-bottom: 2px solid white;
-		background-color: white;
-	}
-	.profileItemTop{
-		height: 11vh;
-		width: 100%;
-		background-image: url("../public/assets/profileItemBackground.png");
-		background-size: contain;
-		background-repeat: no-repeat;
-		border-bottom: 2px solid white;
 	}
 	.profileItemTop img{
-		height: 11vh;
+		height: 22.5vw;
 		width:100%;
 	}
 	.profileItemBottom{
