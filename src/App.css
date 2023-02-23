@@ -184,7 +184,7 @@ html{
     opacity: 0;
     animation: 3s linear appearSlowly forwards;
     z-index: 1;
-    padding-bottom: 5vh;
+    padding-bottom: 8vh;
   }
 }
 @keyframes App-logo-spin {
