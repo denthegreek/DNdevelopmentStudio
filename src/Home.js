@@ -39,9 +39,8 @@ function Home(props) {
 										I have been living, working, and studying, in the area since 2011.
 										Frank Sinatra once sang in one of his songs the lyrics <color style={{color:"#4d0d08",fontWeight:"bold"}}>"If you can make it there, you can make it anywhere"</color>, and these words have motivated me a great deal and still drive me. 
 										It is a tough and beautiful place to live a life and make a living at.
-										<br/><br/>However challenging it may be, to be here and compete within its large population is worth it. There are many opportunities that one can find; thus, it is a great place pursues a career at.
-										<br/><br/>Moreover, it is a multicultural place and you have to adopt for dealing with different people everyday. This is something that helps you keep your mind open and search for new answers to satisfy the different need that everyone has.
-									</p>
+										<br/><br/>However challenging it may be, to be here and compete with its large population is worth it. There are many opportunities that one can find; thus, it is a great place to pursue a career at.
+										<br/><br/>Moreover, it is a multicultural place and you have to adapt to dealing with different people every day. This is something that helps you keep your mind open and search for new answers to satisfy the different needs that everyone has.									</p>
 									</div>
 							</div>
 							<div className="popUpTabTextCards">
@@ -65,7 +64,7 @@ function Home(props) {
 								<div>
 									<h2>Me & New Jersey Institute of Tech</h2>
 									<p>
-										<br/>My studies in NJIT began, in the year 2017. 
+										<br/>My studies at NJIT began, in the year 2017. 
 										My area of study was Computer Science, which is a field of study that was and still is my passion.
 										At NJIT, I aced all classes related to Web Development and, while studying in these classes, I realized that this is what I want to do.
 										<br/><br/>NJIT is a great university, having some of the best instructors that one could possibly ask for. The classes, really, help its students to move forward and have a successful career start.

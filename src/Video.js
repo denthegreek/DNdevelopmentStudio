@@ -8,8 +8,8 @@ function Video(props) {
 
 	const descriptions=[
 			"This is a website for Stohos Shooting Club that I have created. There has been used Angular (which includes HTML, CSS, Typescript), NodeJS (which includes Javascript and tools such as the Nodemailer.",
-			"This is a website that allows you to create task and keep track of their status. It has been created with Angular, NodeJS , and stores the date into a MongoDB non-relational database.",
-			"This is a mock website created for one of my classes. It represents an inventory based buying and selling system. It has been created using HTML, CSS (Vanilla and Bootstrap), Javascript, PHP, and SQL. (The database used is a phpMyAdmin.)"
+			"This is a website that allows you to create tasks and keep track of their status. It has been created with Angular, NodeJS , and stores the date into a MongoDB non-relational database.",
+			"This is a mock website created for one of my classes. It represents an inventory-based buying and selling system. It has been created using HTML, CSS (Vanilla and Bootstrap), Javascript, PHP, and SQL. (The database used is a phpMyAdmin.)"
 		];
 	const currentVideo=[
 			"Stohos Shooting Club",

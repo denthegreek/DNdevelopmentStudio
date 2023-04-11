@@ -7,15 +7,15 @@ import './Profile.css';
 function Profile(props) {
 	const elements=[
 		["// my introduction //"],
-		["./assets/dnCard.png","An effort started, on the summer of 2022, to brand my code and videos. It was a measure necessary to consistently showcase my material. Thus, ΔΝ Dev Studios came to existance. Delta Nhi are the initials of my name in Greek. (Δημοσθένης Νικολακόπουλος) My main goal is to show others pieces of my code, to give people inspiration from my own work."],
-		["./assets/army.png","I served as an officer (Second Lieutanent) in the Greek Military, which is a NATO army with modern equipment. I was in charge of the Tech Department of the XXV Armored Brigade, and later on, of the IV Infantry Division. (Officer Director of Research & Computing) I commanded soldiers specialized on Server Handling and Website Deployment. Additionally, we were responsible for all IT related maintenance and handling."],
-		["./assets/njit.png"," I graduated with a Bachelors of Science degree in Computer Science, on May 2021, from NJIT. While I was still attending classes, I already had decided to follow a web developers career. Hence, I took courses towards that career path and I managed to ace most of them. "],
+		["./assets/dnCard.png","An effort started, in the summer of 2022, to brand my code and videos. It was a measure necessary to consistently showcase my material. Thus, ΔΝ Dev Studios came into existence. Delta Nhi is the initials of my name in Greek. (Δημοσθένης Νικολακόπουλος) My main goal is to show others pieces of my code and to give people inspiration from my own work."],
+		["./assets/army.png","I served as an officer (Second Lieutenant) in the Greek Military, which is a NATO army with modern equipment. I was in charge of the Tech Department of the XXV Armored Brigade, and later on, of the IV Infantry Division. (Officer Director of Research & Computing) I commanded soldiers specialized in Server Handling and Website Deployment. Additionally, we were responsible for all IT-related maintenance and handling."],
+		["./assets/njit.png","  I graduated with a Bachelors of Science degree in Computer Science, on May 2021, from NJIT. While I was still attending classes, I already had decided to follow a web developer career. Hence, I took courses towards that career path and I managed to ace most of them."],
 		["// recent work experience //"],
 		["./assets/armyWork.png"," Officer Director of the Brigade’s Computing Department (Second Lieutenant)","March 2021 – May 2022"],
 		["./assets/oneNineAI.png"," Front-end Web Developer","August 2020 – December 2020","Newark, NJ, USA"],
 		["./assets/amazon.png"," Associate","September 2019 – January 2020","Edison, NJ, USA"],
 		["// personal information //"],
-		["./assets/myStory.png"," I was born an American Citizen; although, my parents who had Greek origins moved us back to Greece. Therefore, I was raised overseas, only to return to the age of 18, at 2011. As my parents did not ever attend a college, I made entirely my own new footsteps. I studied, worked, and lived in the US, until I decided to complete a term of military service in the Greek Army. (2021-2022) Afterwards, I returned to the US to continue my career. "],
+		["./assets/myStory.png","I was born an American Citizen; although, my parents who had Greek origins moved us back to Greece. Therefore, I was raised overseas, only to return at the age of 18, in 2011. As my parents did not ever attend college, I made entirely my own new footsteps. I studied, worked, and lived in the US until I decided to complete a term of military service in the Greek Army. (2021-2022) Afterwards, I returned to the US to continue my career."],
 		["./assets/contactMe.png",""],
 		["./assets/programmingSkills.png",""],
 	];
